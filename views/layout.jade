@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    title= title
+    
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js")
+    
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    header(class="container")
+      h1=title
+    div(class="container")
+      div(class="row")
+        div(class="col-md-12")
+          p This is a project to help me learn git.
+          p The idea is to delve a little more deeply into different branches and forks.
+          p Here's how I see this project going:
+          h4 Github Author: From local to remote
+          ol
+            li Create a project on my local machine
+            li Commit it to a git repo within the project directory
+            li Sign in to author's github account
+            li Create a public repository on my main Github account
+            li Establish the Github repo as the remote
+            li Push the local git repo to the remote Github repo
+            li Make several changes and commits to this project
+            li Push everything up to the remote Github repo
+          h4 Github Contributor: Clone, Change, Pull Request
+          ol
+            li Sign in to contributor account
+            li Go to author's Github page
+            li Clone the remote Github repo to a different directory on my local machine
+            li Make some changes and commits to the project
+            li Make a pull request (this is the part I'm not sure how to do)
+            li Sign out
+          h4 Github Author: Accept Pull Request
+          ol
+            li Sign in to author account
+            li Accept pull request
+            li Sign out
+          h4 Github Contributor: More Changes
+          ol
+            li Sign in to contributor account
+            li Go to author's Github page
+            li Do I then check out the latest version?
+            li Make some changes and commits to the project
+            li Make a pull request (this is the part I'm not sure how to do)
+            li Sign out
+          h4 Github Author: Ignore Pull Request
+          ol
+            li Sign in to author account
+            li Ignore pull request
+            li Make more changes and commits to the project
+            li Pull those changes into the master
+            li Now what happens to the contributor's pull request?
+    footer(class="container")
+    
